@@ -1,0 +1,135 @@
+:root {
+  --primary-color: #4a148c;
+  --secondary-color: #7b1fa2;
+  --accent-color: #ff9800;
+  --bg-light: #f5f5f5;
+  --bg-dark: #242424;
+  --error-color: #e53935;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg-light);
+  color: #333;
+}
+  
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--primary-color);
+  color: white;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.app-header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  max-width: 900px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.input-section, .result-section {
+  flex: 1;
+}
+
+.horoscope-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input.error {
+  border-color: var(--error-color);
+}
+
+.error-message {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--error-color);
+}
+
+.submit-btn {
+  background: var(--accent-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #fb8c00;
+}
+
+.result-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zodiac-result {
+  text-align: center;
+}
+
+.zodiac-symbol {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.description {
+  margin-top: 1rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+.placeholder {
+  text-align: center;
+  color: #777;
+}
